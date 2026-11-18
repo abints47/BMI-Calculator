@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <header class="header">
+        <h2>BMI CALCULATOR</h2>
+      </header>
+
+      <div class="card-body">
+        <!-- Unit Toggle -->
+        <div class="toggle-group">
+          <button type="button" class="toggle-btn active" id="standardBtn">Standard</button>
+          <button type="button" class="toggle-btn" id="metricBtn">Metric</button>
+        </div>
+
+        <!-- Input Fields -->
+        <div class="form-group">
+          <label for="height-value" class="field-label">Height</label>
+          <div class="input-wrapper">
+            <input type="number" id="height-value" class="input-field" placeholder="0" />
+            <span class="unit-text" id="height-unit">Centimeters</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="weight-value" class="field-label">Weight</label>
+          <div class="input-wrapper">
+            <input type="number" id="weight-value" class="input-field" placeholder="0" />
+            <span class="unit-text" id="weight-unit">Kilograms</span>
+          </div>
+        </div>
+
+        <!-- Result Display -->
+        <p id="label" class="result-text"></p>
+
+        <!-- Action Buttons -->
+        <div class="button-group">
+          <button type="button" class="action-btn primary" id="submitBtn">Calculate BMI</button>
+          <button type="button" class="action-btn secondary" id="resetBtn">Reset</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
